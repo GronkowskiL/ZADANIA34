@@ -1,7 +1,7 @@
 import java.util.Date;
 
 public class Human {
-    private Double wynagrodzenie;
+    private Double salary;
 
     String firstName;
     String lastName;
@@ -28,20 +28,20 @@ public class Human {
         this.device = device;
     }
 
-    public Double getWynagrodzenie() {
+    public Double getSalary() {
         System.out.println("Pobrano informacje o wynagrodzeniu " + new Date());
-        System.out.println("Wartość wynagrodzenia wynosi: " + wynagrodzenie);
-        return wynagrodzenie;
+        System.out.println("Wynagrodzenie wynosi: " + salary);
+        return salary;
     }
 
-    public void setWynagrodzenie(Double noweWynagrodzenie) {
-        if (noweWynagrodzenie < 0) {
-            System.out.println("Nie można przypisać ujemnej wartości wynagrodzenia!");
+    public void setSalary(Double newSalary) {
+        if (newSalary < 0) {
+            System.out.println("Nie można przypisać ujemnej wartości wynagrodzenia");
             return;
         }
         System.out.println("Wysłano nowe dane o wynagrodzeniu do systemu księgowego");
         System.out.println("Konieczne jest odebranie aneksu do umowy od pani Hani z kadr");
         System.out.println("ZUS i US już wiedzą o zmianie wynagrodzenia, nie ma sensu ukrywać dochodu");
-        this.wynagrodzenie = noweWynagrodzenie;
+        this.salary = newSalary;
     }
 }
