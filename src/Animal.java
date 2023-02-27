@@ -4,7 +4,7 @@ public class Animal {
     Double weight;
     Boolean isAlive;
 
-    public Animal(String species, String name, Double weight) {
+    public Animal(String species) {
         this.isAlive = true;
         this.species = species;
         this.name = name;
@@ -30,5 +30,29 @@ public class Animal {
         if (this.weight <= 0) {
             isAlive = false;
         }
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSpecies() {
+        return species;
+    }
+
+    public Double getWeight() {
+        return weight;
+    }
+
+    public Boolean isAlive() {
+        return isAlive;
     }
 }

@@ -1,5 +1,5 @@
 public class Phone {
-    final String brand;
+    String brand;
     final String model;
     Integer yearOfProduction;
     Double batteryLife;
@@ -33,4 +33,13 @@ public class Phone {
     public void setColor(String color) {
         this.color = color;
     }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
 }
+
