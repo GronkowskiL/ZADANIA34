@@ -4,11 +4,16 @@ public class Animal {
     Double weight;
     Boolean isAlive;
 
-    public Animal(String species) {
+    public Animal(String species, String name, Double weight) {
         this.isAlive = true;
         this.species = species;
         this.name = name;
         this.weight = weight;
+    }
+
+    public Animal(String species) {
+        this.isAlive = true;
+        this.species = species;
     }
 
     void feed() {

@@ -1,4 +1,5 @@
-import java.util.Date;
+//import java.util.Date;
+//import devices.Car;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,28 +32,28 @@ public class Main {
         car.setFuelConsumption(8.5);
         car.setColor("black");
         car.setValue(20000.0);
-        me.setDevice(car);
+//        me.setDevice(car);
 
-        System.out.println("Masz urządzenie marki " + me.getDevice().getProducer() + " model " + me.getDevice().getModel());
-        System.out.println("Rok produkcji: " + me.getDevice().getYearOfProduction());
-        System.out.println("Spalanie: " + me.getDevice().getFuelConsumption());
-        System.out.println("Kolor: " + me.getDevice().getColor());
-        System.out.println("Wartość: " + me.getDevice().getValue()); // wyświetlenie wartości samochodu
-
-        Car myCar = me.getDevice();
-        System.out.println("Mój samochód: " + myCar.getProducer() + " " + myCar.getModel());
-
-        Double carValue = me.getDevice().getValue();
-        Double salary = me.getSalary();
-
-        if (salary != null && salary >= carValue) {
-            System.out.println("Udało się kupić za gotówkę");
-            me.setDevice(car);
-        } else if (salary != null && salary >= carValue / 12) {
-            System.out.println("Udało się kupić na kredyt");
-            me.setDevice(car);
-        } else {
-            System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
-        }
+//        System.out.println("Masz urządzenie marki " + me.getDevice().getProducer() + " model " + me.getDevice().getModel());
+//        System.out.println("Rok produkcji: " + me.getDevice().getYearOfProduction());
+//        System.out.println("Spalanie: " + me.getDevice().getFuelConsumption());
+//        System.out.println("Kolor: " + me.getDevice().getColor());
+//        System.out.println("Wartość: " + me.getDevice().getValue()); // wyświetlenie wartości samochodu
+//
+//        Car myCar = me.getDevice();
+//        System.out.println("Mój samochód: " + myCar.getProducer() + " " + myCar.getModel());
+//
+//        Double carValue = me.getDevice().getValue();
+//        Double salary = me.getSalary();
+//
+//        if (salary != null && salary >= carValue) {
+//            System.out.println("Udało się kupić za gotówkę");
+//            me.setDevice(car);
+//        } else if (salary != null && salary >= carValue / 12) {
+//            System.out.println("Udało się kupić na kredyt");
+//            me.setDevice(car);
+//        } else {
+//            System.out.println("Zapisz się na studia i znajdź nową robotę albo idź po podwyżkę");
+//        }
     }
 }

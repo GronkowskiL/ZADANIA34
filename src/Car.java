@@ -1,3 +1,7 @@
+//package devices;
+
+import java.util.Objects;
+
 public class Car {
     private String model;
     private String producer;
@@ -49,5 +53,38 @@ public class Car {
 
     public void setValue(double value) {
         this.value = value;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return yearOfProduction == car.yearOfProduction &&
+                Double.compare(car.fuelConsumption, fuelConsumption) == 0 &&
+                Double.compare(car.value, value) == 0 &&
+                Objects.equals(model, car.model) &&
+                Objects.equals(producer, car.producer) &&
+                Objects.equals(color, car.color);
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(model, producer, yearOfProduction, fuelConsumption, color, value);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                ", producer='" + producer + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
+                ", fuelConsumption=" + fuelConsumption +
+                ", color='" + color + '\'' +
+                ", value=" + value +
+                '}';
     }
 }

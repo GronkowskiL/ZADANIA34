@@ -1,3 +1,5 @@
+//import Device.Device;
+
 import java.util.Date;
 
 public class Human {
@@ -6,7 +8,7 @@ public class Human {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
-    private Animal pet;
+    public Animal pet;
     private Phone phone;
 
     public Human(String firstName, String lastName, int yearOfBirth) {
@@ -80,16 +82,12 @@ public class Human {
         return yearOfBirth;
     }
 
-    public Car getDevice() {
-        return car;
-    }
-
-    public void setCar(Car car) {
-        this.car = car;
-    }
-
-    public void setDevice(Car car) {
-        this.car = car;
-
-    }
+//    public Device getDevice() {
+////        return device;
+//
+//    }
+//
+////    public void setDevice(Device device) {
+////        this.device = device;
+//    }
 }
